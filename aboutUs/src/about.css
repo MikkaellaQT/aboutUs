@@ -1,32 +1,73 @@
 .about-us-container {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 0 auto;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo-section {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 150px; 
+  height: auto;
+}
+
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+  margin-bottom: 15px;
+}
+
+.contact-label {
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+
+.contact-value {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
     padding: 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
-  .about-us-container h1 {
+
+  h1 {
     font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
   }
-  
-  .about-us-container p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-  }
-  
-  .contact-info {
-    margin-top: 20px;
+
+  .about-text {
     font-size: 14px;
-    color: #444;
   }
-  
-  .contact-info p {
-    margin: 5px 0;
+
+  .contact-info {
+    padding: 15px;
   }
+}

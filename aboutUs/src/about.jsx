@@ -1,17 +1,30 @@
 import React from 'react';
 import './about.css';
+import Logo from '.logo.svg'; 
 
 const AboutUs = () => {
   return (
     <div className="about-us-container">
-      <h1>About Us v2</h1>
-      <p>
-        AniSove helps farmers sell directly to suppliers, cutting out wholesalers to drive down crop prices. Our platform ensures fair earnings for farmers and better access to fresh produce for suppliers. We are building a transparent, sustainable, and fair agricultural market one step at a time.
+      <div className="logo-section">
+        <img src={Logo} alt="Anisave Logo" className="logo" />
+      </div>
+      <h1>About Us</h1>
+      <p className="about-text">
+        Anisave helps farmers sell directly to suppliers, cutting out middlemen who drive down crop prices. Our platform ensures fair earnings for farmers and better access to fresh produce for suppliers. We're building a transparent, sustainable, and fair agricultural market one deal at a time.
       </p>
       <div className="contact-info">
-        <p>Please contact us at: 09J23456789</p>
-        <p>Email: anisave@gmail.com</p>
-        <p>Location: Iloilo City</p>
+        <div className="contact-item">
+          <span className="contact-label">Phone:</span>
+          <span className="contact-value">09123456789</span>
+        </div>
+        <div className="contact-item">
+          <span className="contact-label">Email:</span>
+          <span className="contact-value">anisave@gmail.com</span>
+        </div>
+        <div className="contact-item">
+          <span className="contact-label">Address:</span>
+          <span className="contact-value">Iloilo City</span>
+        </div>
       </div>
     </div>
   );
